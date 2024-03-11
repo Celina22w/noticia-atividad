@@ -6,6 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícia Geek</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+
+        }
+        .container{
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+            background-color: #ffffff;
+            display: flex;
+            gap: 16px;
+            padding: 1.25rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            flex-direction: column;
+          
+
+        }
+        title{
+            color: #333;
+            font-size: 24px;
+        }
+        .author{
+            color: #666;
+            font-size: 14px;
+
+
+        }
+        .content{
+            color: #444;
+            font-size: 16px;
+
+        }
+        img{
+            width: 100%;
+            margin: 0;
+
+        }
+
 
         /*
         
@@ -48,7 +99,7 @@
     <div class="container">
         <h1 class="title">Lançamento do Novo Jogo "Donald no Mundo da Matemágica"</h1>
         <p class="author">Por Gabriel Augusto - 2 de março de 2022</p>
-        <img src="https://via.placeholder.com/800x400" alt="Mundo da Matemágica" class="image">
+        <img src="donald1.jpg" alt="Mundo da Matemágica" class="image">
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lectus nec dui dapibus
             feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel
             aliquam sapien. Pellentesque tincidunt elit quis sapien aliquet, vel vehicula sem aliquam. Nulla facilisi.
