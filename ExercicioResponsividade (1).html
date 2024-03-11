@@ -36,15 +36,63 @@
             
         */
 
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
         .box {
             background: #335599;
             width: 200px;
             height: 200px;
-            margin: 10px;
+            margin: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 20px;
+            min-height: 20vh;
+            min-width: 20vw;
+            transition: all .5s;
+            cursor: cell;
+        }
+        .box:hover{
+            transform: scale(1.15);
+            border-radius: 8px;
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.80);
+             -webkit-box-shadow: 0 0 20px 0px rgba(0,0,0,0.80); 
+              -moz-box-shadow:0 0 20px 0px rgba(0,0,0,0.80);
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .yellow{
+            background-color: yellow;
+            color: black;
+            
+        }
+        .red{
+            background-color: red;
+            color: black;
+        }
+        .green{
+            background-color: green;
+            color: black;
+        }
+        .blue{
+            background-color: blue;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .box{
+                width: 100%;
+               
+            }
+           
+          
         }
 
     </style>

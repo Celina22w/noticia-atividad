@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-Br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas & CSS</title>
 
-    <style>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        body{
+            padding: 1rem;
+            
+        }
+        td{
+            border: 1px solid #000;
+            padding: 2vh; 
+            
+            
+        }
+        th{
+            background-color: #000;
+            color: white;
+            padding: 15px;
+        }
+        .tr2{
+            background-color: #f2f2f2;
+        }
         /*
 
         1. Faça com que a tabela ocupe 100% da largura da tela.
@@ -23,6 +54,9 @@
         */
 
     </style>
+    
+        
+        
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -54,14 +88,14 @@
                 <th>Status</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="dados">
             <tr>
                 <td>João</td>
                 <td>25</td>
                 <td>Programador</td>
                 <td>Ativo</td>
             </tr>
-            <tr>
+            <tr class="tr2">
                 <td>Maria</td>
                 <td>32</td>
                 <td>Designer</td>
@@ -73,7 +107,7 @@
                 <td>Engenheiro</td>
                 <td>Inativo</td>
             </tr>
-            <tr>
+            <tr class="tr2">
                 <td>Julia</td>
                 <td>38</td>
                 <td>Analista</td>
@@ -85,7 +119,7 @@
                 <td>Designer</td>
                 <td>Ativo</td>
             </tr>
-            <tr>
+            <tr class="tr2">
                 <td>Elizabete</td>
                 <td>33</td>
                 <td>Professora</td>
